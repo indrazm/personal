@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "DM Sans", sans-serif;
+    @apply text-sm bg-zinc-950 text-zinc-500;
+  }
+  h1 {
+    @apply text-3xl font-bold text-zinc-100 tracking-tighter;
+  }
+  h2 {
+    @apply text-2xl text-zinc-400 tracking-tighter;
+  }
+  h3 {
+    @apply text-xl text-zinc-400 tracking-tight;
+  }
+  button {
+    @apply text-xs font-medium bg-indigo-600 hover:bg-indigo-700 text-white w-fit px-4 py-2 rounded-xl transition duration-200;
+  }
+}
+
+@layer components {
+  .card {
+    @apply min-h-[200px] p-8 bg-zinc-800/10 border border-zinc-800 rounded-2xl;
+  }
+}
